@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<updates>
+  <update version="1.0.0">
+    <files>
+      <file path="dacc7b624ba8fb5c92911ad0639325bad7d27e5b/Components/LiveSplit.PerfectPark.dll" status="changed"/>
+    </files>
+    <changelog>
+      <change>Sets game time to in-game race timer</changes>
+      <change>Automatically start timer when starting RACE</change>
+      <change>Automatically reset timer when starting RACE</change>
+      <change>Memory Watch and Log File modes for reading game status</change>
+    </changelog>
+  </update>
+</updates>
