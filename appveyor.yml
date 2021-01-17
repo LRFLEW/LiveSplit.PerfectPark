@@ -1,0 +1,18 @@
+version: 1.0.0#{build}
+image: Visual Studio 2019
+configuration: Release
+environment:
+  livesplit_ver: 1.8.15
+install:
+- ps: >-
+    Invoke-WebRequest "https://github.com/LiveSplit/LiveSplit/releases/download/${env:livesplit_ver}/LiveSplit_${env:livesplit_ver}.zip" -OutFile LiveSplit.zip
+
+    7z x LiveSplit.zip -oLiveSplit\
+
+    Remove-Item LiveSplit.zip
+build:
+  project: LiveSplit.PerfectPark.sln
+  verbosity: minimal
+artifacts:
+- path: LiveSplit.PerfectPark/bin/Release/*
+  name: Build Results
