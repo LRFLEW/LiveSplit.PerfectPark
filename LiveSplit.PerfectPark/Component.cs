@@ -20,7 +20,6 @@ namespace LiveSplit.PerfectPark
         public Component(LiveSplitState state)
         {
             _state = state;
-            _state.IsGameTimePaused = true;
             _timer = new TimerModel { CurrentState = state };
             _timer.OnStart += On_TimerStart;
             _settings.MethodChanged += SetupScanner;
@@ -44,6 +43,7 @@ namespace LiveSplit.PerfectPark
         private void On_TimerStart(object sender, EventArgs e)
         {
             _gameTime = 0;
+            _state.IsGameTimePaused = true;
         }
 
         private void On_RaceStart()
