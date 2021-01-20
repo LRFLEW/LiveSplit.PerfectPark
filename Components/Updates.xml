@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <updates>
+  <update version="1.0.1">
+    <files>
+      <file path="8d16a2d1203e63be9b01421a03c94a427db8149d/Components/LiveSplit.PerfectPark.dll" status="changed"/>
+    </files>
+    <changelog>
+      <change>Fix game timer not always starting paused (doesn't affect final times)</changes>
+    </changelog>
+  </update>
   <update version="1.0.0">
     <files>
       <file path="dacc7b624ba8fb5c92911ad0639325bad7d27e5b/Components/LiveSplit.PerfectPark.dll" status="changed"/>
